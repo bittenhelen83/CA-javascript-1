@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact form</title>
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+    <header>
+        <nav role="navigation">
+            <ul>
+                <li><a href="index.html" title="home">Home</a></li>
+                <li><a href="contact.html" title="order">Contact form</a></li>
+                <li><a href="details.html" title="about">Details</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="form">
+        <div>
+            <form id="contactForm">
+                <p>Name:
+                    <input class="form" type="text" name="fullName" id="fullName" size="15" minlength="15" />
+                </p>
+                <div class="form-error" id="fullNameError">Required field</div>
+                <p>Subject:
+                    <input class="form" type="text" name="subject" id="subject" size="15" minlength="10"
+                        maxlength="40" />
+                </p>
+                <div class="form-error" id="subjectError">Must be at least 10 characters</div>
+                <p>Email:
+                    <input class="form" type="text" name="email" id="email" size="15" maxlength="40" />
+                </p>
+                <div class="form-error" id="emailError">Please enter a valid email address</div>
+                <p>Address:
+                    <input class="form" type="text" name="address" id="address" size="15" minlength="25"
+                        maxlength="40" />
+                </p>
+                <div class="form-error" id="addressError">Must be at least 25 characters</div>
+                <p>
+                    <input type="submit" value="Submit" />
+                </p>
+            </form>
+            <div class="loader"></div>
+        </div>
+    </main>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
